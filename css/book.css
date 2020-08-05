@@ -19,6 +19,9 @@ html, body {
   background-size: cover;
   position: relative;
 }
+ul {
+  width: 100%;
+}
 #slide1 {
   background-image: url("../images/bg/amenimo/amenimo_bg01.PNG");
 }
