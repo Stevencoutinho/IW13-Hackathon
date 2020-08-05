@@ -6,6 +6,7 @@
   <title>宮沢賢治 作品集</title>
   <link rel="stylesheet" href="./css/destyle.css" />
   <link rel="stylesheet" href="./css/index.css" />
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </head>
 <body>
 
@@ -122,7 +123,50 @@
     </div>  <!-- books -->
   </main>
 
+  <div class="menu-trigger">
+    <p><img src="images/navi2.png" width="70" alt="menu"></p>
+  </div>
+  <nav>
+    <p></p>
+    <ul>
+      <li><a href="">新規登録</a></li>
+      <li><a href="">ログイン</a></li>
+      <li><a href="">最初から読む</a></li>
+      <li><a href="">他の作品を読む</a></li>
+      <li class="grey"><a href="">お気に入り</a></li>
+      <li class="grey"><a href="">ブックマーク</a></li>
+    </ul>
+    <p>「雨ニモマケズ」</p>
+    <p>目次　25％読済</p>
+    <ul>
+      <li>・雨にも負けず</li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+
   <footer>(C) Group A</footer>
+
+  <script type="text/javascript">
+    $('.menu-trigger').on('click', function(){
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('nav').removeClass('open');
+        $('.overlay').removeClass('open');
+      }else {
+        $(this).addClass('active');
+        $('nav').addClass('open');
+        $('.overlay').addClass('open');
+      }
+    });
+
+    $('.overlay').on('click', function(){
+      if ($(this).hasClass('open')) {
+        $(this).removeClass('open');
+        $('.menu-trigger').removeClass('active');
+        $('nav').removeClass('open');
+      }
+    })
+  </script>
 
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
