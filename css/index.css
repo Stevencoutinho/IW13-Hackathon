@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body{
+  background-color: #fffbd5;
+  font-family: serif;
+}
+
+.none{
+  display: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+  width: 100vw;
+  background-color: #fffbd5;
+  position: fixed;
+  z-index: 5;
+}
+h1 {
+  font-size: 1.4rem;
+  padding: 4% 0% 0% 4%;
+  background-image: url(../images/bg/orange.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70px;
+}
+span{
+  font-size: 1.8rem;
+}
+header p{
+  padding: 4% 4% 0% 0%;
+}
+
+main{
+  padding: 30% 0% 5% 0%;
+}
+
+h2{
+  font-size: 1.2rem;
+  padding-left: 4%;
+  padding-bottom: 4%;
+}
+
+.background{
+  background-image: url(../images/bg/bg_orange2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 82vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -5;
+}
+
+.books{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 4%;
+  justify-content: space-between;
+}
+
+.mark{
+  background-image: url(../images/bookmark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50px;
+  width: 15%;
+  position: relative;
+  left: 137px;
+  top: -5px;
+}
+
+section{
+  width: 48%;
+  padding-bottom: 5%;
+}
+
+section p{
+  padding: 0% 5%;
+}
+.cover{
+  height: 198px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 5%;
+}
+section p:nth-of-type(2){
+  font-size: 0.9rem;
+  padding-top: 4%;
+}
+section img{
+  position: relative;
+  left: 130px;
+  top: -20px;
+  width: 15%;
+}
+
+section:nth-of-type(1) .cover{
+  background-image: url(../images/bg/b_ame.png);
+}
+section:nth-of-type(2) .cover{
+  background-image: url(../images/bg/b_icho.png);
+}
+section:nth-of-type(3) .cover{
+  background-image: url(../images/bg/b_mori.png);
+}
+section:nth-of-type(4) .cover{
+  background-image: url(../images/bg/b_uroko.png);
+}
+section:nth-of-type(5) .cover{
+  background-image: url(../images/bg/b_kaze.png);
+}
+section:nth-of-type(6) .cover{
+  background-image: url(../images/bg/b_kai.png);
+}
+section:nth-of-type(7) .cover{
+  background-image: url(../images/bg/b_karasu.png);
+}
+section:nth-of-type(8) .cover{
+  background-image: url(../images/bg/b_kadan.png);
+}
+section:nth-of-type(9) .cover{
+  background-image: url(../images/bg/b_kazan.png);
+}
+section:nth-of-type(10) .cover{
+  background-image: url(../images/bg/b_ginga.png);
+}
+
+
+footer{
+  background-color: #f6d580;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 5%;
+  height: 50px;
+}
