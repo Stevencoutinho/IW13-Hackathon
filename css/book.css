@@ -4,16 +4,63 @@ html, body {
   font-family: serif;
 }
 #fullpage {
-  background-color: bisque;
+  background-color: #FFFBD5;
 }
 .section {
   text-align: center;
 }
 .slide {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  text-shadow: 1px 2px 4px rgb(147, 147, 147);
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: relative;
+}
+#slide1 {
+  background-image: url("../images/bg/amenimo/amenimo_bg01.PNG");
+}
+#slide2 {
+  background-image: url("../images/bg/amenimo/amenimo_bg02.PNG");
+}
+#slide3 {
+  background-image: url("../images/bg/amenimo/amenimo_bg03.PNG");
+}
+#slide4 {
+  background-image: url("../images/bg/amenimo/amenimo_bg04.PNG");
+}
+#slide5 {
+  background-image: url("../images/bg/amenimo/amenimo_bg05.PNG");
+}
+#slide6 {
+  background-image: url("../images/bg/amenimo/amenimo_bg06.PNG");
+}
+#slide7 {
+  background-image: url("../images/bg/amenimo/amenimo_bg07.PNG");
+}
+#slide8 {
+  background-image: url("../images/bg/amenimo/amenimo_bg08.PNG");
+}
+#slide9 {
+  background-image: url("../images/bg/amenimo/amenimo_bg09.PNG");
+}
+#slide10 {
+  background-image: url("../images/bg/amenimo/amenimo_bg10.PNG");
+}
+#slide11 {
+  background-image: url("../images/bg/amenimo/amenimo_bg11.PNG");
+}
+#slide12 {
+  background-image: url("../images/bg/amenimo/amenimo_bg12.PNG");
+}
+#slide13 {
+  background-image: url("../images/bg/amenimo/amenimo_bg13.PNG");
+}
+#slide14 {
+  background-image: url("../images/bg/amenimo/amenimo_bg14.PNG");
+  color: white;
 }
 .text {
   width: 100%;
@@ -28,12 +75,6 @@ html, body {
   text-indent: -3em;
 }
 
-/* .text2 {
-  padding-top: 100px;
-}
-.text3 {
-  padding-top: 200px;
-} */
 .title {
   font-size: 5rem;
 }
