@@ -1,0 +1,52 @@
+html, body {
+  font-size: 62.5%;
+  font-size: 10px;
+  font-family: serif;
+}
+#fullpage {
+  background-color: bisque;
+}
+.section {
+  text-align: center;
+}
+.slide {
+  font-size: 3rem;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: relative;
+}
+.text {
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  line-height: 300%;
+}
+.main-text {
+  text-indent: -3em;
+}
+
+/* .text2 {
+  padding-top: 100px;
+}
+.text3 {
+  padding-top: 200px;
+} */
+.title {
+  font-size: 5rem;
+}
+.author {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+.hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.none {
+  display: none;
+}
