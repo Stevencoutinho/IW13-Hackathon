@@ -150,12 +150,18 @@
   <footer>(C) Group A</footer>
 
   <script type="text/javascript">
+
     $('.menu-trigger').on('click', function(){
+      var scrollpos;
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
         $('nav').removeClass('open');
         $('.overlay').removeClass('open');
+        $('body').removeClass('fixed').css({'top': 0});
+        window.scrollTo( 0 , scrollpos );
       }else {
+        scrollpos = $(window).scrollTop();
+        $('body').addClass('fixed').css({'top': -scrollpos});
         $(this).addClass('active');
         $('nav').addClass('open');
         $('.overlay').addClass('open');
@@ -167,6 +173,8 @@
         $(this).removeClass('open');
         $('.menu-trigger').removeClass('active');
         $('nav').removeClass('open');
+        $('body').removeClass('fixed').css({'top': 0});
+        window.scrollTo( 0 , scrollpos );
       }
     })
   </script>
