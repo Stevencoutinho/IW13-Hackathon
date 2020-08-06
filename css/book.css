@@ -23,7 +23,7 @@ html, body {
   background-size: contain;
 }
 .section dd{
-  padding: 7% 0% 3% 3%;
+  padding: 4% 0% 3% 3%;
   width: 80%;
 }
 .section dd a{
@@ -45,7 +45,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: initial;
-  height: 70px;
+  height: 43px;
   padding-left: 7%;
   margin-left: 3%;
 }
@@ -56,6 +56,11 @@ html, body {
 .section dd:nth-last-of-type(1), .section dd:nth-last-of-type(2){
   border-bottom: solid #fffbd5 2px;
   width: 34%;
+}
+
+select{
+  color: orange;
+  background-color: #cfe28376;
 }
 
 .slide {
