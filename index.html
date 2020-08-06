@@ -11,6 +11,16 @@
 </head>
 <body class="is-slide" id="page-animate">
 
+  <div class="top">
+    <div class="name">
+      <p>宮</p>
+      <p>沢</p>
+      <p>賢</p>
+      <p>治</p>
+    </div>
+    <p>作品集</p>
+  </div>
+
   <header>
     <h1><span>宮</span>沢賢治 作品集</h1>
     <p><img src="images/search.png" width="35" alt="検索"></p>
@@ -134,15 +144,19 @@
     <ul>
       <li><a href="">新規登録</a></li>
       <li><a href="">ログイン</a></li>
-      <li><a href="">最初から読む</a></li>
-      <li><a href="">他の作品を読む</a></li>
+      <li><a href="">作品一覧</a></li>
       <li class="grey"><a href="">お気に入り</a></li>
       <li class="grey"><a href="">ブックマーク</a></li>
     </ul>
+    <p>前回読んでいた本</p>
     <p>「雨ニモマケズ」</p>
     <p>目次　25％読済</p>
     <ul>
       <li>・雨にも負けず</li>
+    </ul>
+    <ul>
+      <li><a href="">最初から読む</a></li>
+      <li><a href="">他の作品を読む</a></li>
     </ul>
   </nav>
   <div class="overlay"></div>
@@ -169,12 +183,13 @@
     });
 
     $('.overlay').on('click', function(){
+      var scrollpos;
       if ($(this).hasClass('open')) {
         $(this).removeClass('open');
         $('.menu-trigger').removeClass('active');
         $('nav').removeClass('open');
         $('body').removeClass('fixed').css({'top': 0});
-        window.scrollTo( 0 , scrollpos );
+        window.scrollTo(0, scrollpos );
       }
     })
   </script>
