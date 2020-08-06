@@ -9,6 +9,55 @@ html, body {
 .section {
   text-align: center;
 }
+.section dl{
+  background-color: #cfe283;
+  text-align: left;
+  height: 100vh;
+  padding-top: 20%;
+  padding-left: 10%;
+  font-size: 1.5rem;
+
+  background-image: url(../images/bg/navi_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.section dd{
+  padding: 7% 0% 3% 3%;
+  width: 80%;
+}
+.section dd a{
+  border-bottom: solid #fffbd5 2px;
+}
+.section dt{
+  padding: 10% 5% 5% 5%;
+  font-weight: normal;
+}
+.section dd:nth-of-type(1){
+  background-image: url(../images/bg/navi.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  height: 70px;
+}
+.section dd:nth-child(6){
+  background-image: url(../images/bookmark.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: initial;
+  height: 70px;
+  padding-left: 7%;
+  margin-left: 3%;
+}
+.section dd:nth-child(8){
+  font-size: 2.3rem;
+  padding: 0%;
+}
+.section dd:nth-last-of-type(1), .section dd:nth-last-of-type(2){
+  border-bottom: solid #fffbd5 2px;
+  width: 34%;
+}
+
 .slide {
   font-size: 3.5rem;
   text-shadow: 1px 2px 4px rgb(147, 147, 147);
