@@ -169,12 +169,13 @@
     });
 
     $('.overlay').on('click', function(){
+      var scrollpos;
       if ($(this).hasClass('open')) {
         $(this).removeClass('open');
         $('.menu-trigger').removeClass('active');
         $('nav').removeClass('open');
         $('body').removeClass('fixed').css({'top': 0});
-        window.scrollTo( 0 , scrollpos );
+        window.scrollTo(0, scrollpos );
       }
     })
   </script>
