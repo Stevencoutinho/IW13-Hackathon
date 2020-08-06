@@ -18,7 +18,7 @@
     <div class="section">
       <section class="slide">
         <h3 class="none">page1</h3>
-        <p class="title">雨にも負けず</p>
+        <p class="title"><span class="none">雨</span>にも負けず</p>
         <p class="author">著者&nbsp;宮沢賢治</p>
       </section>
       <section class="slide" id="slide1">
@@ -122,10 +122,30 @@
       </section>
     </div>
     <section class="section">
-      <p><a href="./index.html">戻る</a></p>
+      <dl>
+        <dt class="none">ナビゲーション</dt>
+          <dd><a href="">新規会員登録</a></dd>
+          <dd><a href="">ログイン</a></dd>
+          <dd><a href="./index.html">作品一覧</a></dd>
+          <dd><a href="">ブックマーク</a></dd>
+          <dd><a href="">ブックマークを付ける</a></dd>
+        <dt>前回読んでいた本</dt>
+          <dd>「雨ニモマケズ」</dd>
+          <dd>目次&nbsp;25%読済</dd>
+          <dd>・雨にも負けず</dd>
+        <dt class="none">ページ遷移</dt>
+          <dd id="left">最初から読む</dd>
+          <dd class="repage">続きから読む</dd>
+      </dl>
+      <p class="repage">戻る</p>
     </section>
   </article>
-
+  <nav class="none" id="pageNav">
+    <label for="">
+      <select name="page-change" id="page-change">
+      </select>
+    </label>
+  </nav>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

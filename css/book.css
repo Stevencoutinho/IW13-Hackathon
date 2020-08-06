@@ -65,10 +65,29 @@ ul {
   background-image: url("../images/bg/amenimo/amenimo_bg14.PNG");
   color: white;
 }
+nav {
+  width: 100%;
+  background-color: #cfe28376;
+  position: sticky;
+  z-index: 999;
+  bottom: 0;
+}
+nav label {
+  width: 70%;
+  display: block;
+  border: solid gray 1px;
+  padding: 1px;
+  margin: 0 auto;
+}
+nav select {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 20px;
+}
 .text {
   width: 100%;
   display: flex;
-  flex-flow: nowrap column;
+  flex-flow:row-reverse column-reverse;
   align-items: center;
   justify-content: center;
   text-align: left;
@@ -77,9 +96,15 @@ ul {
 .main-text {
   text-indent: -3em;
 }
-
+.title, .author {
+  text-shadow:none;
+}
 .title {
   font-size: 5rem;
+  background-image: url('../images/raindrop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 30%;
 }
 .author {
   position: absolute;
